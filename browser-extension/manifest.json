@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Workday Status Collector",
+  "version": "0.4.0",
+  "description": "Collect exact application statuses from your registered Workday dashboards.",
+  "minimum_chrome_version": "120",
+  "permissions": ["scripting", "storage", "alarms"],
+  "host_permissions": [
+    "https://*.myworkdayjobs.com/*",
+    "https://*.myworkdaysite.com/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Collect Workday statuses",
+    "default_popup": "popup.html"
+  }
+}

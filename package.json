@@ -1,0 +1,20 @@
+{
+  "name": "workday-status-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local, read-only Workday application status tracker",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node src\\cli.js",
+    "extension:build": "node scripts\\build-extension.js",
+    "pretest": "node scripts\\build-extension.js",
+    "test": "node --test",
+    "setup": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}

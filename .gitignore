@@ -1,0 +1,6 @@
+node_modules/
+browser-extension/shared/
+.workday-tracker/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
